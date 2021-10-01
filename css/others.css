@@ -1,0 +1,105 @@
+main.main-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 67px;
+    padding: 5px;
+}
+
+section.menu-2 {
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0 0 15px #0000001b;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 1500px;
+    width: 100%;
+}
+
+h3.title-section-2 {
+    font-weight: 400;
+    text-align: center;
+    color: var(--Btn-color);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.357);
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, var(--Bg-color), #fff);
+}
+
+h3.title-section-2:nth-child(1) {
+    border-radius: 5px 5px 0 0;
+}
+
+div.bloco-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+div.card-body-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 300px;
+    border-radius: 5px;
+}
+
+div.card-img-2 {
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+}
+
+div.card-img-2>img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+div.card-span-2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    bottom: -700px;
+    padding: 5px;
+    background: #0000004b;
+    transition: all .5s ease-in-out;
+}
+
+div.card-span-2>span {
+    color: var(--White-color);
+    font-weight: 600;
+    font-size: 1.1em;
+    text-shadow: 0 2px 15px #00000079;
+    text-align: center;
+}
+
+div.card-body-2:hover div.card-span-2 {
+    bottom: 0;
+}
+
+div.card-body-2:hover div.card-img-2 {
+    filter: blur(.2em);
+}
+
+@media only screen and (max-width:657px){
+    div.bloco-2{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        overflow: scroll;
+        padding-bottom: 10px;
+    }
+}
