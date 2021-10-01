@@ -95,7 +95,7 @@ a.logo-header>span {
 
 div.content-left-navbar {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
